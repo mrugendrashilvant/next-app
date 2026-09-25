@@ -30,6 +30,16 @@ export async function fetchRevenue() {
   }
 }
 
+export async function getHotelListing() {
+    try {
+        const result = await fetch('/data/hotelList.json');
+        return result;
+    }
+    catch (error) {
+
+    }
+}
+
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw[]>`
