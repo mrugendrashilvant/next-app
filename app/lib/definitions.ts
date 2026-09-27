@@ -9,6 +9,12 @@ export type User = {
   password: string;
 };
 
+export enum AlertType {
+  success = 'success',
+  warning = 'warning',
+  error = 'error',
+}
+
 export type Customer = {
   id: string;
   name: string;
