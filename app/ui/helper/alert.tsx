@@ -14,7 +14,7 @@ export default function Alert({type, children, duration=3000}: {type: AlertType,
 
     useEffect(() => {
         const timer = setTimeout(()=>{
-            // setIsVisible(false);
+            setIsVisible(false);
         }, duration);
 
         return () => {

@@ -13,7 +13,7 @@ export default function StaysSearch() {
 
     function handleVerifySearch() {
         const newAlertData = {
-            type: AlertType.error,
+            type: AlertType.success,
             text: "Search success",
             key: alertData.key+1
         }
