@@ -27,6 +27,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('daisyui')],
+  plugins: [require('@tailwindcss/forms')({ // <-- Executed as a function
+    strategy: 'class',
+  }), require('daisyui')],
+  daisyui: {
+    themes: ['light'],
+  },
 };
 export default config;
